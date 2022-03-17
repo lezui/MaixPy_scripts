@@ -46,14 +46,14 @@ if set_windowing:
 # sensor.set_saturation(0)
 # sensor.set_brightness(4)
 # sensor.set_contrast(0)
-# sensor.set_hmirror(True)        # image horizonal mirror
-# sensor.set_vflip(True)          # image vertical flip
+# sensor.set_hmirror(True)        
+# sensor.set_vflip(True)          
 # sensor.set_auto_whitebal(False)
 
 sensor.skip_frames()
 
 #### lcd config ####
-lcd.init(type=1, freq=15000000)
+lcd.init(invert=1, freq=15000000)
 lcd.rotation(2)
 
 #### boot key ####
